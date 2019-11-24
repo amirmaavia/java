@@ -10,12 +10,21 @@
   <style>
   td{
     text-align: center;
+    border: 1px solid;
+  }
+  #pic{
+    border: 0px solid;
   }
   </style>
    <center><table style="border: 1px solid blue; height: 500px; width: 400px; background-color: lightblue; "></center>
     <tr>
+      <tr>
+        <center><td colspan="4" id="pic"><img src="/home/amir/java/avatar1.svg" width="100px" height="auto" alt="user">
+        </td></center></tr>
+      
       <td colspan="4"><center>MARKSHEET</center></td>
     </tr>
+    
   <th colspan="2">SUBJECT</th>
   <th colspan="1">TOTAL MARKS</th>
   <th colspan="1">GIVEN MARKS</th>
@@ -53,11 +62,11 @@
  <script> 
     
     
-    var Urdu = parseInt (prompt ("given marks in Urdu"));
-    var Eng = parseInt (prompt ("given marks in Eng"));
-    var math = parseInt (prompt  ("given marks in Math"));
-    var islamiat = parseInt (prompt ("given marks in Islam"));
-    var science = parseInt (prompt ("given marks in Sci"));
+    var Urdu = parseInt (prompt ("given marks in Urdu out of 100"));
+    var Eng = parseInt (prompt ("given marks in Eng out of 100"));
+    var math = parseInt (prompt  ("given marks in Math out of 100"));
+    var islamiat = parseInt (prompt ("given marks in Islam out of 100"));
+    var science = parseInt (prompt ("given marks in Sci out of 100"));
        
             var Total = parseInt (Eng+math+Urdu+science+islamiat);
                     
@@ -71,10 +80,8 @@
     window.document.getElementById("i").innerHTML =  islamiat;
     window.document.getElementById("s").innerHTML =  science;
     window.document.getElementById("u").innerHTML = Urdu;
-    window.document.getElementById("e").innerHTML = Eng;
-    window.document.getElementById("m").innerHTML =  math;
-    window.document.getElementById("i").innerHTML =  islamiat;
     window.document.getElementById("per").innerHTML =  Percentage +"%"+"Congratulations";
+
                     </script>
 </body>
 </html>
